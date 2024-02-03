@@ -1,4 +1,6 @@
 using AutoMapper;
+using MED.Application.ViewModel;
+using MED.Domain.Entities;
 
 
 namespace MED.Api.Config
@@ -7,7 +9,7 @@ namespace MED.Api.Config
     {
         public AutomapperConfig()
         {
-            //CreateMap<Contato, ContatoVM>().ReverseMap();
+            CreateMap<Contato, ContatoViewModel>().ReverseMap();
         }
     }
 }
